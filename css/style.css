@@ -1,188 +1,102 @@
 body{
     margin: auto;
-    width: 100%;
-    left: 0;
-    color: black;
-    background-color:linen;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 header{
-    margin: auto;
-    background-color: white;
-    color: #191924;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
-
-nav ul {
+header > section{
+    width: 50%;
+    display: flex;
+    margin-top: 20px;
+}
+header > nav > ul{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
-.name-header, nav ul li{
-    margin : 20px;
-    padding: 10px;
-    list-style-type: none;
-}
-header a {
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-header  a:hover{
-    color: darkslategray;
-}
-header nav a:active{
-    color: rgb(207, 217, 23);
-}
-a{
-    text-decoration: none;
+header > nav > ul > li{
+    margin: 10px;
+    padding: 20px;
 }
 li{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
+nav a{
+    color: darkslategray;
+    font-weight:bolder;
+}
+nav a:hover{
+    background-color: bisque;
 
-footer{
-    bottom: 0;
-    left: 0;
-   text-align: center;
-   margin: auto;
-   margin-top: 50px;
-   width: 100%;
-   height: 10px;
-   padding: 20px;
-   background-color: lightgray;
-   color: darkslategrey;
 }
 main{
-    margin-top: 20px;
-    text-align: center;
+   padding: 20px;
+   text-align: center;
 }
-.welcome-content, .contact-content{
-    padding-top: 250px;
-}
-
-.contact-content{
+main > section{
     margin: auto;
     width: 80%;
-   padding-top: 50px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-
+    text-align: center;
 }
-.skills li{
-    margin: 10px;
+#home{
+    padding-top: 500px;
+    padding-bottom: 400px;
 }
-.contact-info form{
-    margin: auto;
+#about-me, #projects, #contact-me{
+    padding-top: 200px;
+    padding-bottom: 400px;
+    text-align: center;
+}
+form {
     width: 50%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    background-color:lightgray;
+    justify-content: center;
     border-radius: 20px;
+    background-color: lightgray;
 }
-label{
-    margin:auto;
+form > *{
+    margin: auto;
     margin-top: 20px;
-    color: darkslategray;
-}
- input[type="text"],input[type="email"], textarea{
-    margin: 10px;
-    padding: 10px;
-    border-style: dotted;
-    border-radius: 10px;
+    margin-bottom: 5px;
     font-size: 20px;
+    width: 80%;
+    border-radius: 10px;
+    border-style: none;
 }
-input[type="submit"]{
-    font-size: 15px;
-    padding: 14px;
-    margin: 20px;
-    width:30%;
-    border: none;
+form > input[type="submit"]{
+    width: 30%;
+    color: white;
     background-color: darkslategrey;
-    color: lightgrey;
-    border-radius: 10px;
 }
-input[type="submit"]:hover{
-    background-color: rgb(13, 147, 13);
-    color: aliceblue;
+form > input[type="submit"]:hover{
+    background-color: greenyellow;
+    color: black;
 }
-.name-header{
-    width: 50%;
-}
-main.about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.know-me{
-    width: 50%;
-    text-align: center;
-   margin: auto;
-   margin-top: 20px;
-   padding: 10px;
-   border-radius: 10px;
-   background-color:lightgrey;
-}
-.my-skills{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   width:50%;
-   margin:auto;
-   padding: 10px;
-   border-radius: 10px;
-   background-color:lightgrey;
-}
-.skill, .my-reads > ul > li{
-    margin: 20px;
-    padding: 10px;
-    background-color: antiquewhite;
-    color: darkgoldenrod;
-    border-radius: 10px;
-}
-.my-reads{
-    background-color: darkgray;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width:50%
-}
-.my-reads > ul{
-    width: 80%;
-    margin: 20px;
-}
-.my-reads li{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.welcome-body > footer, .projects > footer{
-    position:fixed;
-    bottom: 0;
-}
-.projects-main{
-    margin: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin:auto;
-}
-.projects-main > .projects{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
-}
-.html, .javascript{
-    background-color: lightslategray;
+#about-me > section{
+    background-color: lightgray;
     border-radius: 20px;
-    margin:20px;
-    color: rgb(239, 233, 225);
+    padding: 20px;
+    margin: 20px;
+    color: black;
+}
+footer{
+    background-color: lightgray;
+    color: black;
+    text-align: center;
 }
