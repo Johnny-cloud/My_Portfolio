@@ -1,24 +1,22 @@
-function isEvenOrOdd(num){
-    if(num % 2 == 0){
-        return "Number is even";
-    }else{
-        return "Number is odd";
-    }       
-}
+let contactForm = document.querySelector("#contact-form");
 
-console.log(isEvenOrOdd(9));
-console.log(isEvenOrOdd(10));
+contactForm.addEventListener('submit', (e) => {
 
-function findLargest(num1, num2) {
-    if(num1 > num2){
-        return `${num1} is the largest`;
-    } 
-    else if(num1 < num2){
-        return `${num2} is the largest`;
-    }else if(num1 === num2){
-        return `${num1} and ${num2} are equal`;
+    e.preventDefault();
+
+    let contactName = document.querySelector('contact-name');
+    let contactEmail = document.querySelector('contact-email');
+    let contactMessage = document.querySelector('contact-message');
+
+    if(contactName !== '' && contactEmail !== '' && contactMessage !== ''){
+        let p = document.querySelector('#contact-me > p');
+        p.textContent = "Thank you for your message! I will get back to you as soon as posssible.";
+        p.style.color = 'brown';
+
     }
-      
-}
 
-console.log(findLargest(42, 42));
+})
+
+    
+    
+

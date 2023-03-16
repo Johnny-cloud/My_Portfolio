@@ -55,11 +55,34 @@ main > section{
 #home{
     padding-top: 500px;
     padding-bottom: 400px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
 }
 #about-me, #projects, #contact-me{
     padding-top: 200px;
     padding-bottom: 400px;
     text-align: center;
+    font-weight:400;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#projects > div#logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+}
+#projects > div#logos > div{
+    margin-right: 50px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+#html > a > img, #css > a >img, #js > a >img{
+    border-radius: 40px;
+    padding: 20px;
 }
 form {
     width: 50%;
@@ -85,8 +108,8 @@ form > input[type="submit"]{
     background-color: darkslategrey;
 }
 form > input[type="submit"]:hover{
-    background-color: greenyellow;
-    color: black;
+    background-color:rgb(21, 216, 21);
+    color: rgb(23, 18, 18);
 }
 #about-me > section{
     background-color: lightgray;

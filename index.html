@@ -61,18 +61,18 @@
                 <h2>My Reads</h2>
                 <ul>
                     <li>
-                        <h3>Human centered design</h3>
-                        <p>This is an intensive, hands-on learning experience that will challenge you to get out of your chair 
-                            and out into the real world to talk to people and test your ideas. You’ll leave this experience equipped and energized to apply the human-centered design 
-                            process to challenges across industries, sectors, and geographies to generate breakthrough ideas
+                        <h3>The Laws of Human Nature</h3>
+                        <p>This a book by <i>Robert Greene</i> that explains why human beings behave the way they do.
+                            For instance it talks about how evryone has an ego and we must tread carefully while dealing with other human beings
+                            so as not to bruise their ego since we don't know how they will react.
                         </p>
                     </li>
                     <li>
-                        <h3>Data Structure and Algorithm</h3>
+                        <h3>92 Little Tricks On How To Talk To Anyone</h3>
                         <p>
-                            Many developers who are "self taught", feel that one of the main disadvantages they face compared to college educated 
-                            graduates in computer science is the fact that they don't 
-                            have knowledge about algorithms, data structures and the notorious Big-O Notation
+                           Many people today are hopeless when it comes to starting and maintaining a conversation thanks to technology.
+                           In this classic book on conversation, the author <i>Leil Lowndes</i> talks on how we can start a small talks and turn them to
+                           deep and meaningful conversations. I highly recommend this book to anyone struggling in the art of conversation.
                         </p>
                     </li>
                     <li>
@@ -90,20 +90,32 @@
 
         <section id="projects">
             <h1>My projects</h1>
+            <div id="logos">
+                 <div id="html">                 
+                    <a href="https://github.com/Johnny-cloud?tab=repositories"> <img src="./images/html-logo.png" alt="html logo" width="200px" height="200px"></a>
+                </div>
+                <div id="css">
+                   <a href="https://github.com/Johnny-cloud?tab=repositories"><img src="./images/css-logo.png" alt="css logo" width="200px" height="200px"></a>  
+                </div>
+                <div id="js">      
+                    <a href="https://github.com/Johnny-cloud?tab=repositories"><img src="./images/js-logo.png" alt="js logo" width="200px" height="200px"></a>
+                </div>
+            </div>
+
         </section>
 
         <section id="contact-me">
             <h1>Get in touch</h1>
             <p>Feel free to contact me by submitting the form bellow and I will get back to you as soon as possible. </p>
             <div class="contact-info">
-                <form action="">
+                <form action="" id="contact-form">
                     <label for="name">Your name</label>
-                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="conact-name" placeholder="Name" required>
                     <label for="email">Your email</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <input type="email" id="contact-email" placeholder="Email" required>
                     <label for="meassage">Your message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                    <input type="submit" value="Send">
+                    <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <input type="submit" value="Send" id = "form-submit">
                 </form>    
             </div>
         </section>
